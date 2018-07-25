@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro Estudiantil | Jquery</title>
+        <meta charset="UTF-8">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles/styles.css">
+    </head>
+    <body>
+        <form id="forms-registar">
+            <div class="form-group">
+                <label for="">Codigo: </label>
+                <input type="text" class="form-control" id="codigo" name="question">
+            </div>
+            <div class="form-group">
+                <label for="">Nombre: </label>
+                <input type="text" class="form-control" id="nombre" name="question">
+            </div>
+            <div class="form-group">
+                <label for="">Apellidos: </label>
+                <input type="text" class="form-control" id="apellidos" name="question">
+            </div>
+            <div class="form-group">
+                <label for="">Carrera: </label>
+                <input type="text" class="form-control" id="carrera" name="question">
+                <div class="infbanner">
+                    <ul>
+                        <li>Desarrollador Web</li>
+                        <li>Desarrollador JavaScript</li>
+                        <li>Desarrollo Móvil Android</li>
+                        <li>Desarrollo iOS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Nota: </label>
+                <input type="text" class="form-control" id="nota" name="question">
+            </div>
+            
+            <div class="col-md-12">
+                <div class="botones">
+                    <button id="btn-registar" class="btn btn-block">Registrar Estudiante</button>
+                    <button id="btn-promedio" class="btn btn-block">Mostrar Promedio</button>
+                    <button id="btn-mayor" class="btn btn-block">Mostrar Nota Mayor</button>
+                    <button id="btn-menor" class="btn btn-block">Mostrar Nota Menor</button>
+                </div>
+            </div>
+        </form>
+        <!-- Students Table -->
+        <div class="col-md-12">
+            <table class="tablHeader">
+                <thead>
+                    <th>CÓDIGO</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDOS</th>
+                    <th>CARRERA</th>
+                    <th>NOTAS</th>
+                    <th>EDITAR</th>
+                    <th>ELIMINAR</th>
+                </thead>
+            <tbody id="tablEstudiante""></tbody>
+        </div>
+        <footer>
+            <div class="container">
+                <span class="">2017 | Developed webdevsteps.com</span>
+            </div>
+        </footer>
+
+        <script src="assets/controller/functions.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="assets/controller/functions.js"></script>
+    </body>
+</html>
